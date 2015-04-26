@@ -49,3 +49,4 @@ std_var_list <- features$V2[grep(pattern = 'std\\(\\)',features$V2)] %>% unique(
 var_list <- c("subject", "activity", mean_var_list, std_var_list)
 
 tidy_data <- full_set[var_list]
+write.table(x = tidy_data, file = "tidy_data.txt", row.names = FALSE)
