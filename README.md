@@ -13,4 +13,6 @@ We use the data from activity_labels.txt to relabel the activities column from a
 
 From this single table, we select only variables that measure mean and standard deviation and our identifying columns, "subject" and "activity". In other words, we keep features that are labelled with "mean()" or "std()".
 
+Of the columns that are left, we compute means for each column by subject and activity.
+
 Every row corresponds to precisely one activity done by a single person, so we have a tidy data form and export it to the file tidy_data.txt

@@ -49,4 +49,7 @@ std_var_list <- features$V2[grep(pattern = 'std\\(\\)',features$V2)] %>% unique(
 var_list <- c("subject", "activity", mean_var_list, std_var_list)
 
 tidy_data <- full_set[var_list]
+#summarise each variable to show mean by subject and activity
+tidy_data <- tidy_data %>% group_by(subject, activity) %>% summarise_each(funs(mean))
+  
 write.table(x = tidy_data, file = "tidy_data.txt", row.names = FALSE)
