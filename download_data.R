@@ -1,4 +1,7 @@
+## Download Samsung Galaxy S Smartphone data available at
+## http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
 
+#Set working directory
 setwd("~/GettingandCleaningProject/")
 
 #Download Galaxy Smartphone accelerometer data
