@@ -1,4 +1,4 @@
-##run analysis on the Samsung Galaxy S Accelerometer data
+##Run analysis on the Samsung Galaxy S Accelerometer data
 library(dplyr)
 
 activity_labels <- read.table("Data/UCI HAR Dataset/activity_labels.txt")
